@@ -1,0 +1,26 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    
+    int a,b;
+    scanf("%d",&a);
+    b=a*a;
+    if(a>0 && a<10){
+         if(b%10==a){
+             printf("Automorphic Number");
+         }
+        else
+            printf("Not Automorphic Number");
+        
+    }
+    else
+        printf("Invalid Input");
+        
+    return 0;
+}
