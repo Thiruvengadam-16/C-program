@@ -8,17 +8,17 @@ int main() {
 
     while (count < 3) {
         scanf("%d", &num);
-        printf("%d\n", num); // Echo the input as shown in sample
+        printf("%d\n", num);
 
         if (num < 0) {
             score -= 1;
             break;
         }
-        else if (num % 2 != 0) { // odd
+        else if (num % 2 != 0) {
             score += 1;
             count++;
         }
-        else if (num > 0 && num % 2 == 0) { // positive even
+        else if (num > 0 && num % 2 == 0) {
             score -= 0.5;
         }
     }
