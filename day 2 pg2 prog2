@@ -1,17 +1,23 @@
+#include <math.h>
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
 
 int main() {
     int R, C, T;
     scanf("%d %d %d", &R, &C, &T);
     
-    int second_col_start = (2 - 1) * R + 1;
-    int second_col_end = 2 * R;
+    int sstart = (2 - 1) * R + 1;
+    int send = 2 * R;
 
-    int last_but_one_col_start = (C - 1 - 1) * R + 1;
-    int last_but_one_col_end = (C - 1) * R;
+    int lstart = (C - 1 - 1) * R + 1;
+    int lend = (C - 1) * R;
 
-    if ((T >= second_col_start && T <= second_col_end) ||
-        (T >= last_but_one_col_start && T <= last_but_one_col_end)) {
+    if ((T >= sstart && T <= send) ||
+        (T >= lstart && T <= lend)) {
         printf("It is a mango tree\n");
     } else {
         printf("It is not a mango tree\n");
