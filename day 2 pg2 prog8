@@ -1,0 +1,25 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    if(b==1){
+        printf("%d",a+c);
+    }
+    else if(b==2 && a>=c){
+            printf("%d",a-c);
+    }
+    else if(b>2)
+        printf("Invalid Input");
+    else if(a<c)
+        printf("Insufficient Balance");
+     
+        
+    return 0;
+}
